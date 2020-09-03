@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>HibernateTeste</title>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/css/style.css"/>
+    </h:head>
+    <h:body>
+        <h:form id="form">
+            <p:growl id="growl" life="3000" showDetail="true"/>
+            <div>
+                <table border="1"> 
+                <tr>
+                    <td>Veiculos</td>
+                    <td>Clientes</td>
+                    <td>Locações</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>100</label><br/>                       
+                        <div>
+                            <p:commandButton action="#{veiculoMB.salvar(100)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.consultar(100)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>100</label><br/>
+                        <div>
+                            <p:commandButton action="#{clienteMB.salvar(100)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.consultar(100)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>100</label><br/>
+                        <div>
+                            <p:commandButton action="#{locacaoMB.salvar(100)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.alterar(100)}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.consultar(100)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <label>1000</label><br/>                       
+                        <div>
+                            <p:commandButton action="#{veiculoMB.salvar(1000)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.consultar(1000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>1000</label><br/>
+                        <div>
+                            <p:commandButton action="#{clienteMB.salvar(1000)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.consultar(1000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>1000</label><br/>
+                        <div>
+                            <p:commandButton action="#{locacaoMB.salvar(1000)}" value="Salvar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.alterar(1000)}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.consultar(1000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <label>10000</label><br/>
+                        <div>
+                            <p:commandButton action="#{veiculoMB.salvar(10000)}" value="Salvar" update="growl" />
+                            <p:commandButton action="#{veiculoMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.consultar(10000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{veiculoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>10000</label><br/>
+                        <div>
+                            <p:commandButton action="#{clienteMB.salvar(10000)}" value="Salvar" update="growl" />
+                            <p:commandButton action="#{clienteMB.alterar()}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.consultar(10000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{clienteMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                    <td>
+                        <label>10000</label><br/>
+                        <div>
+                            <p:commandButton action="#{locacaoMB.salvar(10000)}" value="Salvar" update="growl" />
+                            <p:commandButton action="#{locacaoMB.alterar(10000)}" value="Alterar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.listar()}" value="Listar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.consultar(10000)}" value="Consultar" update="growl"/>
+                            <p:commandButton action="#{locacaoMB.deletar()}" value="Exluir" update="growl"/>
+                        </div><br/>
+                    </td>
+                </tr>
+                </table>
+            </div>
+        </h:form> 
+    </h:body>
+</html>
+
